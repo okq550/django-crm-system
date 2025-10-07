@@ -13,9 +13,11 @@ deactivate
 # Install postgresDriver
 pip install "psycopg[binary]"
 
-
+git init
+git add .
+git commit -m "first commit"
 git remote add origin git@okq550-github:okq550/django-crm-system.git
-git remote set-url origin git@okq550-github:okq550/django-crm-system.git
+git push -u origin main
 
 # Running the App
 source venv/bin/activate
