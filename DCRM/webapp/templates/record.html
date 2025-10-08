@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-md-6 offset-md-3">
+  <h1>Customer Record with ID {{ record.id }}</h1>
+  <br />
+  <div class="card">
+    <div class="card-header">
+      {{ record.first_name }} {{ record.last_name }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Email</h5>
+      <p class="card-text">{{ record.email }}</p>
+
+      <h5 class="card-title">Phone</h5>
+      <p class="card-text">{{ record.phone }}</p>
+
+      <h5 class="card-title">Address</h5>
+      <p class="card-text">{{ record.address }}</p>
+
+      <h5 class="card-title">City</h5>
+      <p class="card-text">{{ record.city }}</p>
+
+      <h5 class="card-title">State</h5>
+      <p class="card-text">{{ record.state }}</p>
+
+      <h5 class="card-title">Zipcode</h5>
+      <p class="card-text">{{ record.zipcode }}</p>
+
+      <h5 class="card-title">Created At</h5>
+      <p class="card-text">{{ record.created_at }}</p>
+      <a href="{% url 'home' %}" class="btn btn-secondary">Home</a>
+      <a href="{% url 'add_record' %}" class="btn btn-secondary">Add</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
