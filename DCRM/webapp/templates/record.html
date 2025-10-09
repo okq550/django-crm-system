@@ -31,6 +31,7 @@
       <p class="card-text">{{ record.created_at }}</p>
       <a href="{% url 'home' %}" class="btn btn-secondary">Home</a>
       <a href="{% url 'add_record' %}" class="btn btn-secondary">Add</a>
+      <a href="{% url 'update_record' record.id %}" class="btn btn-secondary">Update</a>
     </div>
   </div>
 </div>
