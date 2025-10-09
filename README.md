@@ -70,4 +70,4 @@ python manage.py shell
 python manage.py createsuperuser
 
 # Install Django Debug Toolbar
-python -m pip install django-debug-toolbar 
+python -m pip install django-debug-toolbar
